@@ -1,27 +1,22 @@
-# password_protekt
+# Key Chain
 
 Simple python implementation of encrypting your password with python and a implementation of Vigenere + Permutation box cipher.
-
-
-Protekk.py will allow you to pass a .txt or .md file - it will prompt you to input a key word and a key number;
-These are your two private keys which will later be used for decryption.
-It will execute the encryption logic in encryptor.py and produce a new .txt file with the encrypted password.
-
-Unlock.py will allow you to pass a .txt file of ciphertext - and prompt you to input a key word and a key number;
-It will execute the decryption logic in decryptor.py, and produce a new .txt file - which if the keys were correct would result in the
-plaintext version of the password.
-
 
 - The program is Case sensitive, and retains cases in encrypted password.
 - The vigenere will encrypt numbers as well as letters.
 
+Password_protektor.py will allow you to either...
+- Add a new password
+- Remove a password
+- Unlock keychain / view password
+- Create a new keychain
+
+Similar to the Apple Keychain but my own implementation
 
 
 ### Future developments
 
 - QT / GUI implementation
-
-
 
 
 #### TO DO LIST
@@ -30,6 +25,7 @@ plaintext version of the password.
 4. Wrapper Unlock
 5. PasswordProtekt.py
 6. Add more cipher logic!!
+7. Can we update passwords without revealing?
 
 Testing
 
