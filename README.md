@@ -13,7 +13,7 @@ plaintext version of the password.
 
 
 - The program is Case sensitive, and retains cases in encrypted password.
-- The vigenere will encrypt Permutation
+- The vigenere will encrypt numbers as well as letters.
 
 
 
@@ -26,10 +26,15 @@ plaintext version of the password.
 
 #### TO DO LIST
 
-1. Implement Vigenere Encrypt and Decrypt
-2. Implement Permutation Encrypt and Decrypt
 3. Wrapper Protekk
 4. Wrapper Unlock
 5. PasswordProtekt.py
+6. Add more cipher logic!!
 
 Testing
+
+
+Done;
+1. Implement Vigenere Encrypt and Decrypt
+2. Implement Permutation Encrypt and Decrypt
+
