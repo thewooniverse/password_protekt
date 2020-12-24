@@ -3,7 +3,7 @@ import string
 
 test_str_key = "FUNFUNRUNRUN"
 test_num_key = "023654"
-test_pt = "yooowhatisthepassword????"
+test_pt = "yooow1233hatisthepassword????"
 
 
 # later it all needs to be added as str(input())
@@ -54,12 +54,12 @@ def vigenere_encrypt(plaintext, key_word, key_num):
     return result
 
 
-# print(vigenere_encrypt(test_str_key, test_num_key, test_pt))
+# print(vigenere_encrypt(test_pt, test_str_key, test_num_key))
 
 ###### Vig Cipher implementation #####
 
 
-plain = "111123333455556ABC"
+plain = "111123333455556ABCDEF"
 
 
 def permuntation_encrypt(plaintext, block_size=3, rotation=1):
@@ -89,4 +89,6 @@ def combination_encrypt(plaintext, key_word, key_num, block_size=3, rotation=1):
     comb_text = permuntation_encrypt(vig_text, block_size, rotation)
     return comb_text
 
-# print(combination_encrypt(test_pt, test_str_key, test_num_key, 4, 2))
+
+print(combination_encrypt(test_pt, test_str_key, test_num_key, 4, 2))
+
