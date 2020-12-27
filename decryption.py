@@ -85,11 +85,11 @@ def permutation_decrypt(ciphertext, block_size, rotation):
 # print(permutation_decrypt(tst_ct, 5, 3))
 
 
-def comb_decrypt(ciphertext, key_word, key_num, block_size, rotation):
+def combination_decrypt(ciphertext, key_word, key_num, block_size, rotation):
     perm_decrypted = permutation_decrypt(ciphertext, block_size, rotation)
     vig_decrypted = vigenere_decrypt(perm_decrypted, key_word, key_num)
 
     return vig_decrypted
 
 
-print(comb_decrypt(comb_ciphered, test_str_key, test_num_key, 4, 2))
+# print(combination_decrypt(comb_ciphered, test_str_key, test_num_key, 4, 2))

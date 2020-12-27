@@ -1,6 +1,12 @@
 # Key Chain
 
-Simple python implementation of encrypting your password with python and a implementation of Vigenere + Permutation box cipher.
+Simple python implementation of encrypting your a txt file containing your password;
+ with python and a implementation of Vigenere + Permutation box cipher.
+
+
+
+
+
 
 - The program is Case sensitive, and retains cases in encrypted password.
 - The vigenere will encrypt numbers as well as letters.

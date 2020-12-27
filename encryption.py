@@ -90,5 +90,4 @@ def combination_encrypt(plaintext, key_word, key_num, block_size=3, rotation=1):
     return comb_text
 
 
-print(combination_encrypt(test_pt, test_str_key, test_num_key, 4, 2))
-
+# print(combination_encrypt(test_pt, test_str_key, test_num_key, 4, 2))
