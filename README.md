@@ -1,28 +1,35 @@
 # Key Chain
 
-Simple python implementation of encrypting your a txt file containing your password;
- with python and a implementation of Vigenere + Permutation box cipher.
+A python program for encrypting, accessing and editing a text file containing any secretive info.
+- In my case, it is used to hide vague hints for different password combinations I use for different websites.
+
+In the current version encryption is done using a combination of Vigenere + Permutation box cipher.
+
+The program is case sensitive, and retains cases in the encrypted text;
+The program encrypts alphanumeric characters and the permutation box is applied to all characters giving some security to symbols and spaces.
+
+It can be executed through the terminal, and prompts the user for a key word and key number to encrypt a filename.txt file using the encryption algorithms;
+The output of the software is a cipher_filename.txt file which contains the encrypted version of the text from filename.txt.
+This is your encrypted file, which you can unlock into the correct plaintext with the correct key word and key number.
+
+
+Arguments;
+-U : Unlock keychain
+-L : Lock a new txt file with cipher and new password.
 
 
 
 
-
-
-- The program is Case sensitive, and retains cases in encrypted password.
-- The vigenere will encrypt numbers as well as letters.
-
-Password_protektor.py will allow you to either...
-- Add a new password
-- Remove a password
-- Unlock keychain / view password
-- Create a new keychain
-
-Similar to the Apple Keychain but my own implementation
 
 
 ### Future developments
 
 - QT / GUI implementation
+- New data structure instead of txt
+
+    Future development
+    -E : edit function
+    -C : Copy, unencrypts a given password and copies it to clipboard.
 
 
 #### TO DO LIST
@@ -32,6 +39,8 @@ Similar to the Apple Keychain but my own implementation
 5. PasswordProtekt.py
 6. Add more cipher logic!!
 7. Can we update passwords without revealing?
+- New data types, using python dictionary potentially.
+
 
 Testing
 
