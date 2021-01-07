@@ -63,7 +63,7 @@ def vigenere_decrypt(ciphertext, key_word, key_num):
 # print(vigenere_decrypt(ct, test_str_key, test_num_key))
 
 
-def permutation_decrypt(ciphertext, block_size, rotation):
+def permutation_decrypt(ciphertext, block_size=3, rotation=1):
     result = ""
 
     for i in list(range(len(ciphertext))):
@@ -85,7 +85,7 @@ def permutation_decrypt(ciphertext, block_size, rotation):
 # print(permutation_decrypt(tst_ct, 5, 3))
 
 
-def combination_decrypt(ciphertext, key_word, key_num, block_size, rotation):
+def combination_decrypt(ciphertext, key_word, key_num, block_size=3, rotation=1):
     perm_decrypted = permutation_decrypt(ciphertext, block_size, rotation)
     vig_decrypted = vigenere_decrypt(perm_decrypted, key_word, key_num)
 
