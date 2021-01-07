@@ -1,4 +1,5 @@
 pyasn1==0.4.8
+pyperclip==1.8.1
 PySide6==6.0.0
 rsa==4.6
 shiboken6==6.0.0

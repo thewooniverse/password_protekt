@@ -1,22 +1,35 @@
 # Key Chain
 
-Simple python implementation of encrypting your password with python and a implementation of Vigenere + Permutation box cipher.
+A python program for encrypting, accessing and editing a plaintext file containing any secretive info.
+- In my case, it is used to hide vague hints for different password combinations I use for different websites.
 
-- The program is Case sensitive, and retains cases in encrypted password.
-- The vigenere will encrypt numbers as well as letters.
+In the current version encryption is done using a combination of Vigenere + Permutation box cipher.
 
-Password_protektor.py will allow you to either...
-- Add a new password
-- Remove a password
-- Unlock keychain / view password
-- Create a new keychain
+The program is case sensitive, and retains cases in the encrypted text, but symbols are not.
+The permutation box is applied to all characters giving some security to symbols in the password by mixing the order around.
 
-Similar to the Apple Keychain but my own implementation
+It can be executed through the terminal, and prompts the user for a key word and key number to encrypt a filename.txt file using the encryption algorithms;
+The output of the software is a cipher_filename.txt file which contains the encrypted version of the text from filename.txt.
+This is your encrypted file, which you can unlock into the correct plaintext with the correct key word and key number.
+
+
+Usage:
+wrapper.py -lock filename : Locks keychain
+wrapper.py -lock filename D : Locks keychain, deletes original pt file
+wrapper.py -unlock filename : Unlocks ciphertext keychain to original plaintext with given encryption keys, if correct, correct pt is generated.
+
+
+
+
 
 
 ### Future developments
 
 - QT / GUI implementation
+- New data structure instead of txt
+
+New usage;
+-update filename A : adds new lines
 
 
 #### TO DO LIST
@@ -26,6 +39,8 @@ Similar to the Apple Keychain but my own implementation
 5. PasswordProtekt.py
 6. Add more cipher logic!!
 7. Can we update passwords without revealing?
+- New data types, using python dictionary potentially.
+
 
 Testing
 
