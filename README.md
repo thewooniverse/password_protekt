@@ -34,12 +34,11 @@ New usage;
 
 #### TO DO LIST
 
-3. Wrapper Protekk
-4. Wrapper Unlock
-5. PasswordProtekt.py
-6. Add more cipher logic!!
-7. Can we update passwords without revealing?
-- New data types, using python dictionary potentially.
+6. Add more cipher logic!!!
+7. Can we update passwords without revealing? Get, update (add or delete).
+- New data types, using python dictionary potentially instead of plaintext;
+-- translating txt files into python dictionaries?
+-- having a encrypted dictionary to start with?
 
 
 Testing
@@ -48,4 +47,6 @@ Testing
 Done;
 1. Implement Vigenere Encrypt and Decrypt
 2. Implement Permutation Encrypt and Decrypt
+3. Wrapper Protekk
+4. Wrapper Unlock
 
