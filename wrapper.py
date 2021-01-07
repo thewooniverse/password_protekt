@@ -41,8 +41,6 @@ if functionality == "lock" or functionality == "dlock":
     print(f'{filename} is locked!!\nRemember to write down your key num and key word!!')
 
 
-
-
 # if it is to unlock, read the filename, and create the filename without locked_ in fron.
 if functionality == "unlock":
     with open(filename, 'r') as rf:
@@ -69,40 +67,3 @@ if functionality == "unlock":
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# print message output to say
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### testing ###
-# Basic test for functionality after import
-# test_str_key = "FUNFUNRUNRUN"
-# test_num_key = "023654"
-# test_pt = "yooow1233hatisthepassword????"
-# print(test_pt)
-# tst_ct = (encrypt(test_pt, test_str_key, test_num_key, 3, 2))
-# print(tst_ct)
-# print(decrypt(tst_ct, test_str_key, test_num_key, 3, 2))
