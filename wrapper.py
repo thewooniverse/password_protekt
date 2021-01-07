@@ -22,10 +22,18 @@ filename = sys.argv[2] # filename
 # user facing to accept key_str and key_num
 usr_str_key =  input("Please type in your key word:\n")
 usr_num_key = input("Please type in your key number:\n")
-# usr_rotation = input("Please enter your rotation key specified one, leave blank for default:\n")
-# usr_block_size = input("Please enter your block size if you specified one, leave blank for default:\n")
 
+usr_block_size = input("Please enter your block size if you specified one, leave blank for default:\n")
+if not usr_block_size:
+    usr_block_size = 3
+else:
+    usr_block_size = int(usr_block_size)
 
+usr_rotation = input("Please enter your rotation key specified one, leave blank for default:\n")
+if not usr_rotation:
+    usr_rotation = 1
+else:
+    usr_rotation = int(usr_rotation)
 
 
 
@@ -35,7 +43,7 @@ if functionality == "lock" or functionality == "dlock":
     with open(filename, 'r') as rf:
         with open("locked_" + filename, 'w') as wf:
             for line in rf.readlines():
-                cipher_line = encrypt(line, usr_str_key, usr_num_key)
+                cipher_line = encrypt(line, usr_str_key, usr_num_key, usr_block_size, usr_rotation)
                 wf.write(cipher_line + '\n')
 
     print(f'{filename} is locked!!\nRemember to write down your key num and key word!!')
@@ -46,7 +54,7 @@ if functionality == "unlock":
     with open(filename, 'r') as rf:
         with open(filename.strip('locked_'), 'w') as wf:
             for line in rf.readlines():
-                plaintext_line = decrypt(line, usr_str_key, usr_num_key)
+                plaintext_line = decrypt(line, usr_str_key, usr_num_key, usr_block_size, usr_rotation)
                 wf.write(plaintext_line + '\n')
 
     print(f'{filename} is now unlocked, if it looks like jumbles then try again with the correct key_num and key word!!')
